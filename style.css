@@ -10,8 +10,8 @@ body {
 
 #container {
     margin: 0px auto;
-    width: 90%;
-    height: auto;
+    width: 500px;
+	height: 375px;
     padding-top: 20px;
 }
 
