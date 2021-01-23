@@ -1,5 +1,6 @@
 
 var timeout_handles = []    
+var timeout_handles2 = []    
 
 var texts = [];
 var times = [];
@@ -46,7 +47,10 @@ function init(){
     for(var i=0; i<lines; i++){
 
         var currentItem = arr[i];
-        var currentTime = times[i]*1000
+        if(i>0){
+            var currentTime = times[i-1]*1000
+        }
+        else currentTime =0;
         count += currentTime;
 
         set_time_out( i, count )
@@ -59,13 +63,28 @@ function set_time_out( id, time ) /// wrapper
     {
         clearTimeout( timeout_handles[id] )
     }
+    if( id in timeout_handles2 )
+    {
+        clearTimeout( timeout_handles2[id] )
+    }
     timeout_handles[id] = setTimeout( function() { nextPrompt(id) }, time )
+    timeout_handles2[id] = setTimeout( function() { reset(id) }, time+100 )
+
+}
+
+function reset(id){
+    prompt = arr[id];
+    document.getElementById('bubble').style.visibility = 'visible';
+    document.getElementById('bubble').style.transition = 'top 10s';
+    document.getElementById('bubble').style.top = '10%';
 }
 
 function nextPrompt(id){
     prompt = arr[id];
-    document.getElementById('bubble').style.top= '90%';
     document.getElementById('bubble').style.visibility = 'visible';
-    document.getElementById('bubble').style.top= '10%';
+    document.getElementById('bubble').style.transition = 'top 0s';
+    document.getElementById('bubble').style.top = '90%';
+
     document.getElementById('bubble').innerHTML=prompt.text;
 }
+

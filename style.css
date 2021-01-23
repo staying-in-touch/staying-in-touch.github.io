@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'apercu';
+    overflow-x: hidden;
+    background: rgb(255, 231, 235);
+}
+
+#container {
+    margin: 0px auto;
+    width: 90%;
+    height: auto;
+    padding-top: 20px;
+}
+
+#text{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    color: rgb(236, 67, 67);
+}
+
+#bubble{
+    z-index: 10;
+    position: absolute;
+    padding: 10px;
+    left: 10%;
+    visibility: hidden;
+    color: rgb(236, 67, 67);
+    border: 3px solid rgb(236, 67, 67);
+    background:rgb(247, 206, 213);
+    border-radius: 50%;
+}
+
+#videoElement {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+    border-radius: 5%;
+}
+
+/*************************************************/
+/*                    fonts                      */
+/*************************************************/
+/* ultralight fonts */
+@font-face {
+    font-family: 'Apercu';
+    src: url("assets/fonts/ApercuLight/Apercu-Light.woff2") format("woff2"), url("assets/fonts/ApercuLight/Apercu-Light.woff") format("woff"), url("assets/fonts/ApercuLight/Apercu-Light.ttf") format("truetype"), url("assets/fonts/ApercuLight/Apercu-Light.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Apercu';
+    src: url("assets/fonts/ApercuLightItalic/Apercu-LightItalic.woff2") format("woff2"), url("assets/fonts/ApercuLightItalic/Apercu-LightItalic.woff") format("woff"), url("assets/fonts/ApercuLightItalic/Apercu-LightItalic.ttf") format("truetype"), url("assets/fonts/ApercuLightItalic/Apercu-LightItalic.otf") format("opentype");
+    font-weight: 100;
+    font-style: italic;
+  }
+  /* light fonts */
+  @font-face {
+    font-family: 'Apercu';
+    src: url("assets/fonts/ApercuRegular/Apercu-Regular.woff2") format("woff2"), url("assets/fonts/ApercuRegular/Apercu-Regular.woff") format("woff"), url("assets/fonts/ApercuRegular/Apercu-Regular.ttf") format("truetype"), url("assets/fonts/ApercuRegular/Apercu-Regular.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Apercu';
+    src: url("assets/fonts/ApercuItalic/Apercu-Italic.woff2") format("woff2"), url("assets/fonts/ApercuItalic/Apercu-Italic.woff") format("woff"), url("assets/fonts/ApercuItalic/Apercu-Italic.ttf") format("truetype"), url("assets/fonts/ApercuItalic/Apercu-Italic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+  }
+  /* medium fonts */
+  @font-face {
+    font-family: 'Apercu';
+    src: url("assets/fonts/ApercuMedium/Apercu-Medium.woff2") format("woff2"), url("assets/fonts/ApercuMedium/Apercu-Medium.woff") format("woff"), url("assets/fonts/ApercuMedium/Apercu-Medium.ttf") format("truetype"), url("assets/fonts/ApercuMedium/Apercu-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Apercu';
+    src: url("assets/fonts/ApercuMediumItalic/Apercu-MediumItalic.woff2") format("woff2"), url("assets/fonts/ApercuMediumItalic/Apercu-MediumItalic.woff") format("woff"), url("assets/fonts/ApercuMediumItalic/Apercu-MediumItalic.ttf") format("truetype"), url("assets/fonts/ApercuMediumItalic/Apercu-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+  }
+  /* bold fonts */
+  @font-face {
+    font-family: 'Apercu';
+    src: url("assets/fonts/ApercuBold/Apercu-Bold.woff2") format("woff2"), url("assets/fonts/ApercuBold/Apercu-Bold.woff") format("woff"), url("assets/fonts/ApercuBold/Apercu-Bold.ttf") format("truetype"), url("assets/fonts/ApercuBold/Apercu-Bold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Apercu';
+    src: url("assets/fonts/ApercuBoldItalic/Apercu-BoldItalic.woff2") format("woff2"), url("assets/fonts/ApercuBoldItalic/Apercu-BoldItalic.woff") format("woff"), url("assets/fonts/ApercuBoldItalic/Apercu-BoldItalic.ttf") format("truetype"), url("assets/fonts/ApercuBoldItalic/Apercu-BoldItalic.otf") format("opentype");
+    font-weight: 800;
+    font-style: italic;
+  }
