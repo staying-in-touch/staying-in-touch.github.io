@@ -93,7 +93,12 @@ function reset(id){
     var audio = new Audio('assets/audio/'+arr[id].audio);
     audio.play();
 
-    document.getElementById('bubble').style.visibility = 'visible';
+    if(prompt.text == ""){
+        document.getElementById('bubble').style.visibility = 'hidden';
+    }
+    else{
+        document.getElementById('bubble').style.visibility = 'visible';
+    }
     document.getElementById('bubble').style.transition = 'top 30s';
     document.getElementById('bubble').style.top = '10%';
 
