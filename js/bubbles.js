@@ -6,8 +6,10 @@ var texts = [];
 var times = [];
 var paths = [];
 
+var currentPath = 0;
+
 var arr = [];
-var obj = {};
+var objs = []
 
 var lines;
 
@@ -18,10 +20,6 @@ function load(){
         for(i=0; i<d.length; i++){
 
             lines= d.length
-
-            texts.push(d[i].text)
-            times.push(d[i].time)
-            paths.push(d[i].path)
 
             var item = {};
 
@@ -36,17 +34,20 @@ function load(){
 }
 
 function init(){
-    obj['texts'] = texts;
-    obj['times'] = times;
-    obj['paths'] = paths;
 
-    // window.setTimeout(function() { nextPrompt(arr[0]) }, 3000)
+    arr[lines-1].path
+
+    for(var i=0; i<lines; i++){
+        console.log('hoho')
+        var obj = {}
+        obj[arr[i].path] = arr
+
+    }
 
     var count = 0;
 
     for(var i=0; i<lines; i++){
 
-        var currentItem = arr[i];
         if(i>0){
             var currentTime = times[i-1]*1000
         }
@@ -88,3 +89,7 @@ function nextPrompt(id){
     document.getElementById('bubble').innerHTML=prompt.text;
 }
 
+function option(j){
+    console.log(j)
+    document.getElementById('wrapper').style.visibility = 'hidden';
+}
