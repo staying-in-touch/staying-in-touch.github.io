@@ -99,10 +99,12 @@ function reset(id){
     else{
         document.getElementById('bubble').style.visibility = 'visible';
     }
+
+    if(id == currentPath.length-2){
+        document.getElementById('wrapper').style.visibility = 'visible';
+    }
     document.getElementById('bubble').style.transition = 'top 30s';
     document.getElementById('bubble').style.top = '10%';
-
-    document.getElementById('wrapper').style.visibility = 'visible';
 }
 
 function nextPrompt(id){
