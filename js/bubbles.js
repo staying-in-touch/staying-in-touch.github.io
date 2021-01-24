@@ -56,6 +56,8 @@ function init(){
 
 function path(pathCount){
 
+    document.getElementById('wrapper').style.visibility = 'hidden';
+
     currentPath=objs['path'+pathCount]
 
     var count = 0;

@@ -2,7 +2,7 @@ text,time,path,audio
 "",3,1,""
 "Take a moment to scan your body, listen to your breath, feel your pulse.",15,1,"moment.mp3"
 "Explore your body. Find three places where touching it feels nice.",20,1,"explore.mp3"
-"Think of something on your body that looks nice or imagine something on someone else’s body that you think looks nice.",30,1,"think.mp3"
+"Think of something on your body that looks nice, or imagine something on someone else’s body that you think looks nice.",30,1,"think.mp3"
 "Focus on one of them. Try touching it in a different way. Use a different part of your body, touch it with something different.",30,1,"focus.mp3"
 "",15,1,"what.mp3"
 "",3,1,""
