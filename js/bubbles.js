@@ -75,7 +75,7 @@ function set_time_out( id, time ) /// wrapper
 function reset(id){
     prompt = arr[id];
     document.getElementById('bubble').style.visibility = 'visible';
-    document.getElementById('bubble').style.transition = 'top 10s';
+    document.getElementById('bubble').style.transition = 'top 30s';
     document.getElementById('bubble').style.top = '10%';
 }
 
@@ -83,7 +83,7 @@ function nextPrompt(id){
     prompt = arr[id];
     document.getElementById('bubble').style.visibility = 'visible';
     document.getElementById('bubble').style.transition = 'top 0s';
-    document.getElementById('bubble').style.top = '90%';
+    document.getElementById('bubble').style.top = '80%';
 
     document.getElementById('bubble').innerHTML=prompt.text;
 }
