@@ -11,7 +11,7 @@ var currentPath = 0;
 var arr = [];
 var objs = {};
 
-var pathArr = [];
+var currentPath = [];
 
 var lines;
 
@@ -56,7 +56,7 @@ function init(){
 
 function path(pathCount){
 
-    var currentPath=objs['path'+pathCount]
+    currentPath=objs['path'+pathCount]
 
     var count = 0;
     for(var i=0; i<currentPath.length; i++){
@@ -88,7 +88,7 @@ function set_time_out( id, time ) /// wrapper
 }
 
 function reset(id){
-    prompt = arr[id];
+    prompt = currentPath[id];
 
     var audio = new Audio('assets/audio/'+arr[id].audio);
     audio.play();
@@ -96,10 +96,12 @@ function reset(id){
     document.getElementById('bubble').style.visibility = 'visible';
     document.getElementById('bubble').style.transition = 'top 30s';
     document.getElementById('bubble').style.top = '10%';
+
+    document.getElementById('wrapper').style.visibility = 'visible';
 }
 
 function nextPrompt(id){
-    prompt = arr[id];
+    prompt = currentPath[id];
     document.getElementById('bubble').style.visibility = 'visible';
     document.getElementById('bubble').style.transition = 'top 0s';
     document.getElementById('bubble').style.top = '80%';
