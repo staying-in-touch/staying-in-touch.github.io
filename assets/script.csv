@@ -1,13 +1,13 @@
-text,time,path
-"Take a moment to scan your body, listen to your breath, feel your pulse.",15,0
-"Explore your body. Find three places where touching it feels nice.",20,0
-"Think of something on your body that looks nice or imagine something on someone else’s body that you think looks nice.",30,0
-"Focus on one of them. Try touching it in a different way. Use a different part of your body, touch it with something different",30,0
-"Try changing the rhythm of how you’re touching it. Move faster, move slower, move in a rhythm",15,1
-"Think about how your body is changing? Are your palms sweating? Are you blushing? Is your heart racing? Are you wet? Is your penis hard? Are your nipples hard?",30,1
-"Move onto a different area. Try touching that in a different way.",20,1
-"Think about how you’re feeling now?  How does this specific touch feel?",30,1
-"Move onto a different area. Try touching that in a different way",15,2
-"Think about how your body is changing? Are your palms sweating? Are you blushing? Is your heart racing? Are you wet? Is your penis hard? Are your nipples hard?",30,2
-"Move onto a different area. Try touching that in a different way.",20,2
-"Think about how you’re feeling now?  How does this specific touch feel?",30,2
+text,time,path,audio
+"Take a moment to scan your body, listen to your breath, feel your pulse.",15,0,"Hmm.mp3"
+"Explore your body. Find three places where touching it feels nice.",20,0,"Hmm.mp3"
+"Think of something on your body that looks nice or imagine something on someone else’s body that you think looks nice.",30,0,"Hmm.mp3"
+"Focus on one of them. Try touching it in a different way. Use a different part of your body, touch it with something different",30,0,"Hmm.mp3"
+"Try changing the rhythm of how you’re touching it. Move faster, move slower, move in a rhythm",15,1,"Hmm.mp3"
+"Think about how your body is changing? Are your palms sweating? Are you blushing? Is your heart racing? Are you wet? Is your penis hard? Are your nipples hard?",30,1,"Hmm.mp3"
+"Move onto a different area. Try touching that in a different way.",20,1,"Hmm.mp3"
+"Think about how you’re feeling now?  How does this specific touch feel?",30,1,"Hmm.mp3"
+"Move onto a different area. Try touching that in a different way",15,2,"Hmm.mp3"
+"Think about how your body is changing? Are your palms sweating? Are you blushing? Is your heart racing? Are you wet? Is your penis hard? Are your nipples hard?",30,2,"Hmm.mp3"
+"Move onto a different area. Try touching that in a different way.",20,2,"Hmm.mp3"
+"Think about how you’re feeling now?  How does this specific touch feel?",30,2,"Hmm.mp3"

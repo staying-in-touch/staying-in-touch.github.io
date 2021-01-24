@@ -26,6 +26,8 @@ function load(){
             item['text'] = d[i].text
             item['time'] = d[i].time
             item['path'] = d[i].path
+            item['audio'] = d[i].audio
+
 
             arr.push(item)
         }
@@ -52,7 +54,7 @@ function init(){
     for(var i=0; i<lines; i++){
 
         if(i>0){
-            var currentTime = times[i-1]*1000
+            var currentTime = arr[i-1].time*1000
         }
         else currentTime =0;
         count += currentTime;
@@ -78,6 +80,10 @@ function set_time_out( id, time ) /// wrapper
 
 function reset(id){
     prompt = arr[id];
+
+    var audio = new Audio('assets/audio/'+arr[id].audio);
+    audio.play();
+
     document.getElementById('bubble').style.visibility = 'visible';
     document.getElementById('bubble').style.transition = 'top 30s';
     document.getElementById('bubble').style.top = '10%';
