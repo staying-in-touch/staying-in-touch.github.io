@@ -41,6 +41,7 @@ body {
 #wrapper{
   z-index: 5;
   position: absolute;
+  visibility: hidden;
   top: 550px;
   width: 100%;
 }

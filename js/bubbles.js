@@ -9,7 +9,9 @@ var paths = [];
 var currentPath = 0;
 
 var arr = [];
-var objs = []
+var objs = {};
+
+var pathArr = [];
 
 var lines;
 
@@ -40,27 +42,34 @@ function init(){
     var noPaths = arr[lines-1].path
 
     for(var i=0; i<noPaths; i++){
-        console.log('hoho')
-        var obj = {}
-        obj[i] = []
+        objs['path'+i] = []
+        for(var j=0; j<lines; j++){
+            if(i==parseInt(arr[j].path)-1){
+                objs['path'+i].push(arr[j])
+            }
+        }
     }
 
-    for(var i=0; i<lines; i++){
+    path(0)
 
-    }
+}
+
+function path(pathCount){
+
+    var currentPath=objs['path'+pathCount]
 
     var count = 0;
-
-    for(var i=0; i<lines; i++){
+    for(var i=0; i<currentPath.length; i++){
 
         if(i>0){
-            var currentTime = arr[i-1].time*1000
+            var currentTime = currentPath[i-1].time*1000
         }
         else currentTime =0;
         count += currentTime;
 
         set_time_out( i, count )
     }
+
 }
 
 function set_time_out( id, time ) /// wrapper
