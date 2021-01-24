@@ -18,6 +18,7 @@ body {
 #text{
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 20px;
   color: rgb(236, 67, 67);
 }
@@ -40,7 +41,7 @@ body {
 #wrapper{
   z-index: 5;
   position: absolute;
-  top: 500px;
+  top: 550px;
   width: 100%;
 }
 
@@ -69,6 +70,12 @@ body {
   border-radius: 50%;
   margin: 10px;
   text-align: center;
+}
+
+.audioControls{
+  transform: translateX(-50%);
+  left: 50%;
+  position: relative;
 }
 
 #videoElement {

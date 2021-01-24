@@ -35,12 +35,15 @@ function load(){
 
 function init(){
 
-    arr[lines-1].path
+    var noPaths = arr[lines-1].path
 
-    for(var i=0; i<lines; i++){
+    for(var i=0; i<noPaths; i++){
         console.log('hoho')
         var obj = {}
-        obj[arr[i].path] = arr
+        obj[i] = []
+    }
+
+    for(var i=0; i<lines; i++){
 
     }
 
